@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Marina Geller Yamaguti · Product Engineer</title>
+  <meta name="description" content="Marina Geller Yamaguti is a product engineer working across mobile engineering, interaction design and HCI. Open to summer 2027 internships in Paris.">
+  <meta name="theme-color" content="#F2F2EA" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1B1916" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="Marina Geller Yamaguti · Product Engineer">
+  <meta property="og:description" content="Mobile engineering, interaction design and HCI. Open to summer 2027 internships in Paris.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <!-- Sets the theme before first paint (no flash) and flags that JS is running -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (t !== 'light' && t !== 'dark') {
+        t = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', t);
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <!-- Shared SVG shapes: flower + sparkle stickers, and the flower clip-path used for photos -->
+  <svg class="svg-defs" width="0" height="0" aria-hidden="true" focusable="false">
+    <defs>
+      <clipPath id="flower-clip" clipPathUnits="objectBoundingBox">
+        <path d="M1.0000 0.5000 L0.9985 0.5131 L0.9941 0.5259 L0.9870 0.5383 L0.9775 0.5502 L0.9660 0.5613 L0.9529 0.5717 L0.9388 0.5813 L0.9243 0.5902 L0.9098 0.5984 L0.8960 0.6061 L0.8834 0.6136 L0.8723 0.6210 L0.8631 0.6286 L0.8560 0.6366 L0.8511 0.6454 L0.8483 0.6551 L0.8477 0.6658 L0.8488 0.6777 L0.8514 0.6908 L0.8551 0.7050 L0.8594 0.7202 L0.8638 0.7362 L0.8678 0.7528 L0.8710 0.7695 L0.8729 0.7861 L0.8731 0.8022 L0.8715 0.8173 L0.8677 0.8311 L0.8617 0.8433 L0.8536 0.8536 L0.8433 0.8617 L0.8311 0.8677 L0.8173 0.8715 L0.8022 0.8731 L0.7861 0.8729 L0.7695 0.8710 L0.7528 0.8678 L0.7362 0.8638 L0.7202 0.8594 L0.7050 0.8551 L0.6908 0.8514 L0.6777 0.8488 L0.6658 0.8477 L0.6551 0.8483 L0.6454 0.8511 L0.6366 0.8560 L0.6286 0.8631 L0.6210 0.8723 L0.6136 0.8834 L0.6061 0.8960 L0.5984 0.9098 L0.5902 0.9243 L0.5813 0.9388 L0.5717 0.9529 L0.5613 0.9660 L0.5502 0.9775 L0.5383 0.9870 L0.5259 0.9941 L0.5131 0.9985 L0.5000 1.0000 L0.4869 0.9985 L0.4741 0.9941 L0.4617 0.9870 L0.4498 0.9775 L0.4387 0.9660 L0.4283 0.9529 L0.4187 0.9388 L0.4098 0.9243 L0.4016 0.9098 L0.3939 0.8960 L0.3864 0.8834 L0.3790 0.8723 L0.3714 0.8631 L0.3634 0.8560 L0.3546 0.8511 L0.3449 0.8483 L0.3342 0.8477 L0.3223 0.8488 L0.3092 0.8514 L0.2950 0.8551 L0.2798 0.8594 L0.2638 0.8638 L0.2472 0.8678 L0.2305 0.8710 L0.2139 0.8729 L0.1978 0.8731 L0.1827 0.8715 L0.1689 0.8677 L0.1567 0.8617 L0.1464 0.8536 L0.1383 0.8433 L0.1323 0.8311 L0.1285 0.8173 L0.1269 0.8022 L0.1271 0.7861 L0.1290 0.7695 L0.1322 0.7528 L0.1362 0.7362 L0.1406 0.7202 L0.1449 0.7050 L0.1486 0.6908 L0.1512 0.6777 L0.1523 0.6658 L0.1517 0.6551 L0.1489 0.6454 L0.1440 0.6366 L0.1369 0.6286 L0.1277 0.6210 L0.1166 0.6136 L0.1040 0.6061 L0.0902 0.5984 L0.0757 0.5902 L0.0612 0.5813 L0.0471 0.5717 L0.0340 0.5613 L0.0225 0.5502 L0.0130 0.5383 L0.0059 0.5259 L0.0015 0.5131 L0.0000 0.5000 L0.0015 0.4869 L0.0059 0.4741 L0.0130 0.4617 L0.0225 0.4498 L0.0340 0.4387 L0.0471 0.4283 L0.0612 0.4187 L0.0757 0.4098 L0.0902 0.4016 L0.1040 0.3939 L0.1166 0.3864 L0.1277 0.3790 L0.1369 0.3714 L0.1440 0.3634 L0.1489 0.3546 L0.1517 0.3449 L0.1523 0.3342 L0.1512 0.3223 L0.1486 0.3092 L0.1449 0.2950 L0.1406 0.2798 L0.1362 0.2638 L0.1322 0.2472 L0.1290 0.2305 L0.1271 0.2139 L0.1269 0.1978 L0.1285 0.1827 L0.1323 0.1689 L0.1383 0.1567 L0.1464 0.1464 L0.1567 0.1383 L0.1689 0.1323 L0.1827 0.1285 L0.1978 0.1269 L0.2139 0.1271 L0.2305 0.1290 L0.2472 0.1322 L0.2638 0.1362 L0.2798 0.1406 L0.2950 0.1449 L0.3092 0.1486 L0.3223 0.1512 L0.3342 0.1523 L0.3449 0.1517 L0.3546 0.1489 L0.3634 0.1440 L0.3714 0.1369 L0.3790 0.1277 L0.3864 0.1166 L0.3939 0.1040 L0.4016 0.0902 L0.4098 0.0757 L0.4187 0.0612 L0.4283 0.0471 L0.4387 0.0340 L0.4498 0.0225 L0.4617 0.0130 L0.4741 0.0059 L0.4869 0.0015 L0.5000 0.0000 L0.5131 0.0015 L0.5259 0.0059 L0.5383 0.0130 L0.5502 0.0225 L0.5613 0.0340 L0.5717 0.0471 L0.5813 0.0612 L0.5902 0.0757 L0.5984 0.0902 L0.6061 0.1040 L0.6136 0.1166 L0.6210 0.1277 L0.6286 0.1369 L0.6366 0.1440 L0.6454 0.1489 L0.6551 0.1517 L0.6658 0.1523 L0.6777 0.1512 L0.6908 0.1486 L0.7050 0.1449 L0.7202 0.1406 L0.7362 0.1362 L0.7528 0.1322 L0.7695 0.1290 L0.7861 0.1271 L0.8022 0.1269 L0.8173 0.1285 L0.8311 0.1323 L0.8433 0.1383 L0.8536 0.1464 L0.8617 0.1567 L0.8677 0.1689 L0.8715 0.1827 L0.8731 0.1978 L0.8729 0.2139 L0.8710 0.2305 L0.8678 0.2472 L0.8638 0.2638 L0.8594 0.2798 L0.8551 0.2950 L0.8514 0.3092 L0.8488 0.3223 L0.8477 0.3342 L0.8483 0.3449 L0.8511 0.3546 L0.8560 0.3634 L0.8631 0.3714 L0.8723 0.3790 L0.8834 0.3864 L0.8960 0.3939 L0.9098 0.4016 L0.9243 0.4098 L0.9388 0.4187 L0.9529 0.4283 L0.9660 0.4387 L0.9775 0.4498 L0.9870 0.4617 L0.9941 0.4741 L0.9985 0.4869Z"/>
+      </clipPath>
+    </defs>
+    <symbol id="i-flower" viewBox="0 0 100 100">
+      <path d="M100.00 50.00 L99.41 52.59 L97.75 55.02 L95.29 57.17 L92.43 59.02 L89.60 60.61 L87.23 62.10 L85.60 63.66 L84.83 65.51 L84.88 67.77 L85.51 70.50 L86.38 73.62 L87.10 76.95 L87.31 80.22 L86.77 83.11 L85.36 85.36 L83.11 86.77 L80.22 87.31 L76.95 87.10 L73.62 86.38 L70.50 85.51 L67.77 84.88 L65.51 84.83 L63.66 85.60 L62.10 87.23 L60.61 89.60 L59.02 92.43 L57.17 95.29 L55.02 97.75 L52.59 99.41 L50.00 100.00 L47.41 99.41 L44.98 97.75 L42.83 95.29 L40.98 92.43 L39.39 89.60 L37.90 87.23 L36.34 85.60 L34.49 84.83 L32.23 84.88 L29.50 85.51 L26.38 86.38 L23.05 87.10 L19.78 87.31 L16.89 86.77 L14.64 85.36 L13.23 83.11 L12.69 80.22 L12.90 76.95 L13.62 73.62 L14.49 70.50 L15.12 67.77 L15.17 65.51 L14.40 63.66 L12.77 62.10 L10.40 60.61 L7.57 59.02 L4.71 57.17 L2.25 55.02 L0.59 52.59 L0.00 50.00 L0.59 47.41 L2.25 44.98 L4.71 42.83 L7.57 40.98 L10.40 39.39 L12.77 37.90 L14.40 36.34 L15.17 34.49 L15.12 32.23 L14.49 29.50 L13.62 26.38 L12.90 23.05 L12.69 19.78 L13.23 16.89 L14.64 14.64 L16.89 13.23 L19.78 12.69 L23.05 12.90 L26.38 13.62 L29.50 14.49 L32.23 15.12 L34.49 15.17 L36.34 14.40 L37.90 12.77 L39.39 10.40 L40.98 7.57 L42.83 4.71 L44.98 2.25 L47.41 0.59 L50.00 0.00 L52.59 0.59 L55.02 2.25 L57.17 4.71 L59.02 7.57 L60.61 10.40 L62.10 12.77 L63.66 14.40 L65.51 15.17 L67.77 15.12 L70.50 14.49 L73.62 13.62 L76.95 12.90 L80.22 12.69 L83.11 13.23 L85.36 14.64 L86.77 16.89 L87.31 19.78 L87.10 23.05 L86.38 26.38 L85.51 29.50 L84.88 32.23 L84.83 34.49 L85.60 36.34 L87.23 37.90 L89.60 39.39 L92.43 40.98 L95.29 42.83 L97.75 44.98 L99.41 47.41Z" fill="currentColor"/>
+      <circle cx="50" cy="50" r="15" style="fill: var(--sticker-center, #302D28)"/>
+    </symbol>
+    <symbol id="i-sparkle" viewBox="0 0 100 100">
+      <path d="M50 0C54 34 66 46 100 50C66 54 54 66 50 100C46 66 34 54 0 50C34 46 46 34 50 0Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-star-outline" viewBox="0 0 100 100">
+      <path d="M50 7.5 L61.3 35.2 L90.5 37.6 L67.2 55.9 L75.4 84.6 L50.4 68.6 L24.6 83.4 L32.9 55 L9.6 36.4 L39.2 35.6 Z"
+            fill="none" stroke="currentColor" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-star" viewBox="0 0 100 100">
+      <path d="M50 4l12 26 28-4-18 22 18 22-28-4-12 26-12-26-28 4 18-22L10 26l28 4z" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3zm7 0h3.8v1.5h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1v5.45h-4v-4.83c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.91h-4z"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></symbol>
+    <symbol id="i-flip" viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 13.66-5.66L20 8.5M20 4v4.5h-4.5M20 12a8 8 0 0 1-13.66 5.66L4 15.5M4 20v-4.5h4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="M15 5 8 12l7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#top" aria-label="Marina Geller Yamaguti, back to top">
+        <svg class="nav__logo" aria-hidden="true"><use href="#i-flower"/></svg>
+        <span>Marina <em>Yamaguti</em></span>
+      </a>
+      <nav class="nav__menu" aria-label="Sections">
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#awards">Awards</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+      </nav>
+      <button class="switch" id="theme-switch" type="button" role="switch" aria-checked="false" aria-label="Dark mode">
+        <span class="switch__track" aria-hidden="true">
+          <span class="switch__thumb">
+            <svg class="switch__icon switch__icon--sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></g></svg>
+            <svg class="switch__icon switch__icon--moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="currentColor"/></svg>
+          </span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container">
+        <svg class="sticker sticker--flower hero__flower" aria-hidden="true"><use href="#i-flower"/></svg>
+        <svg class="sticker sticker--sparkle hero__sparkle" aria-hidden="true"><use href="#i-sparkle"/></svg>
+
+        <p class="status-pill"><span class="status-pill__dot" aria-hidden="true"></span>Open to summer 2027 internships in Paris</p>
+
+        <h1 class="hero__title" id="hero-title">
+          <em>Hi,</em> <svg class="hero__star" aria-hidden="true" focusable="false"><use href="#i-star-outline"/></svg> I'm
+          <span class="hero__photo">
+            <img src="images/marina-hero.webp" alt="" width="930" height="500" fetchpriority="high">
+          </span>
+          <em>Marina</em><span class="hero__bang">!</span>
+        </h1>
+
+        <p class="hero__role">
+          <span class="sr-only">Product engineer, iOS developer, interaction designer and HCI student.</span>
+          <span class="typewriter" aria-hidden="true">
+            <!-- Invisible copy of the longest phrase: it alone sets the height, so the
+                 lines below never move as the text types and deletes. JS keeps it in sync. -->
+            <span class="typewriter__sizer" id="typewriter-sizer">an interaction designer</span>
+            <span class="typewriter__line"><span class="typewriter__text" id="typewriter" data-final="product engineer · iOS developer · interaction designer · HCI student">a product engineer</span><span class="typewriter__caret"></span></span>
+          </span>
+        </p>
+
+        <p class="hero__intro">I'm interested in how things work and how they feel to use. I build mobile apps end to end, from user research and Figma prototypes to Swift, Kotlin and Go in production.</p>
+
+        <div class="btn-row">
+          <a class="btn btn--primary" href="Marina_Yamaguti_CV.pdf" download>
+            <svg aria-hidden="true"><use href="#i-download"/></svg>Download CV
+          </a>
+          <a class="btn" href="https://www.linkedin.com/in/marina-yamaguti/" target="_blank" rel="noopener">
+            <svg aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn
+          </a>
+                    <a class="btn" href="https://github.com/marina-yamaguti" target="_blank" rel="noopener">
+            <svg aria-hidden="true"><use href="#i-github"/></svg>GitHub
+          </a>
+          <a class="btn" href="mailto:m.gelleryamaguti@gmail.com">
+            <svg aria-hidden="true"><use href="#i-mail"/></svg>Email
+          </a>
+        </div>
+
+        <!-- Bento highlights -->
+        <ul class="bento" aria-label="Highlights">
+          <li class="bento__card bento__card--now color-peri">
+            <p class="tag">Now</p>
+            <p class="bento__big">M.Sc. in <em>HCI</em> at Université Paris-Saclay</p>
+            <p class="bento__small">IDEX Excellence Scholarship · 2026–2028</p>
+            <svg class="sticker bento__sticker" aria-hidden="true"><use href="#i-flower"/></svg>
+          </li>
+          <li class="bento__card bento__card--wwdc color-coral">
+            <p class="tag">Apple · 2024</p>
+            <p class="bento__big">WWDC24 Swift Student Challenge <em>winner</em></p>
+            <p class="bento__small">Invited to WWDC24 at Apple Park for Iris</p>
+          </li>
+          <li class="bento__card color-card">
+            <p class="tag">Globo</p>
+            <p class="bento__mid">Sign-in SDKs used by <em>millions</em></p>
+            <p class="bento__small">iOS, Android and Go</p>
+          </li>
+          <li class="bento__card color-sage">
+            <p class="tag">PUCRS</p>
+            <p class="bento__mid"><em>1st</em> in class</p>
+            <p class="bento__small">GPA 9.046/10 · Best Thesis</p>
+          </li>
+          <li class="bento__card bento__card--wide color-card">
+            <p class="tag">Speaks</p>
+            <ul class="mini-pills" aria-label="Spoken languages">
+              <li class="color-coral">Portuguese</li>
+              <li class="color-peri">English</li>
+              <li class="color-sage">French</li>
+              <li class="color-card-alt">Spanish</li>
+            </ul>
+          </li>
+          <li class="bento__card bento__card--wide bento__card--ink">
+            <p class="tag">End to end</p>
+            <p class="bento__flow">Research <span aria-hidden="true">→</span> Figma <span aria-hidden="true">→</span> Swift · Kotlin · Go</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="tag tag--section">01 · Work</p>
+          <h2 class="section__title reveal" id="work-title">Selected <em>work</em></h2>
+          <p class="section__lede">Tap or press Enter on a card to flip it. Each one opens a short case study.</p>
+        </div>
+
+        <ul class="projects">
+
+          <!-- Iris -->
+          <li class="project color-peri" data-project="iris">
+            <div class="project__inner">
+              <button class="face face--front" type="button" aria-expanded="false" aria-label="Iris: a story-driven iPad game about living with low vision. Flip card for details">
+                <span class="face__media">
+                  <img src="images/iris-cover.webp" alt="" width="1600" height="1200" loading="lazy" decoding="async">
+                </span>
+                <span class="face__meta"><span class="tag">2024 · iPad</span><span class="badge">WWDC24 winner</span></span>
+                <span class="face__title">Iris</span>
+                <span class="face__tagline">A story-driven iPad game about living with low vision.</span>
+                <span class="flip-hint" aria-hidden="true"><svg><use href="#i-flip"/></svg>Flip</span>
+              </button>
+              <div class="face face--back" inert>
+                <h3 class="back__title">Iris</h3>
+                <dl class="back__meta">
+                  <div><dt>Role</dt><dd>Solo: research, illustration, design and development</dd></div>
+                  <div><dt>Year</dt><dd>2024</dd></div>
+                  <div><dt>Stack</dt><dd>Swift, SwiftUI, Figma</dd></div>
+                </dl>
+                <p class="back__summary">I interviewed university professors working on inclusive technology, then wrote and illustrated the story of a girl whose vision changes, told through mini-games that connect players to real assistive tools. Iris won Apple's WWDC24 Swift Student Challenge.</p>
+                <div class="back__actions">
+                  <button class="btn btn--primary btn--sm" type="button" data-case="iris">Read case study</button>
+                  <button class="icon-btn flip-back" type="button" aria-label="Flip Iris card back"><svg aria-hidden="true"><use href="#i-flip"/></svg></button>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- GloboID -->
+          <li class="project color-coral" data-project="globoid">
+            <div class="project__inner">
+              <button class="face face--front" type="button" aria-expanded="false" aria-label="GloboID: sign-in for Brazil's largest media group. Flip card for details">
+                <span class="face__media">
+                  <img src="images/globoid-cover.webp" alt="Three iPhones on a coral background showing the GloboID TV sign-in flow: a screen asking for the six-character code shown on your TV, the orange Globo logo, and a confirmation that the TV was activated." width="1600" height="1200" loading="lazy" decoding="async">
+                </span>
+                <span class="face__meta"><span class="tag">2025–2026 · iOS, Android, Go</span></span>
+                <span class="face__title">GloboID</span>
+                <span class="face__tagline">Sign-in for Brazil's largest media group.</span>
+                <span class="flip-hint" aria-hidden="true"><svg><use href="#i-flip"/></svg>Flip</span>
+              </button>
+              <div class="face face--back" inert>
+                <h3 class="back__title">GloboID</h3>
+                <dl class="back__meta">
+                  <div><dt>Role</dt><dd>Mobile Engineer, Identity Platform</dd></div>
+                  <div><dt>Year</dt><dd>2025–2026</dd></div>
+                  <div><dt>Stack</dt><dd>Swift, Kotlin, Go, OAuth 2.0 / OIDC</dd></div>
+                </dl>
+                <p class="back__summary">I maintained the iOS and Android authentication SDKs behind Globoplay, Premiere and major live events. I built TV sign-in over local Wi‑Fi and profile-completion flows that protect minors' data under ECA Digital, owning features from the Go backend to both mobile clients.</p>
+                <div class="back__actions">
+                  <button class="btn btn--primary btn--sm" type="button" data-case="globoid">Read case study</button>
+                  <button class="icon-btn flip-back" type="button" aria-label="Flip GloboID card back"><svg aria-hidden="true"><use href="#i-flip"/></svg></button>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- VanGO -->
+          <li class="project color-sage" data-project="vango">
+            <div class="project__inner">
+              <button class="face face--front" type="button" aria-expanded="false" aria-label="VanGO: routes, passengers and daily trips for school van drivers. Flip card for details">
+                <span class="face__media">
+                  <img src="images/vango-cover.webp" alt="" width="1600" height="1200" loading="lazy" decoding="async">
+                </span>
+                <span class="face__meta"><span class="tag">2026 · React Native</span><span class="badge">Team of 18</span></span>
+                <span class="face__title">VanGO</span>
+                <span class="face__tagline">Routes, passengers and daily trips for school van drivers.</span>
+                <span class="flip-hint" aria-hidden="true"><svg><use href="#i-flip"/></svg>Flip</span>
+              </button>
+              <div class="face face--back" inert>
+                <h3 class="back__title">VanGO</h3>
+                <dl class="back__meta">
+                  <div><dt>Role</dt><dd>Project manager (18 people) and frontend developer</dd></div>
+                  <div><dt>Year</dt><dd>2026</dd></div>
+                  <div><dt>Stack</dt><dd>React Native, Mapbox, Socket.IO, FastAPI, AWS</dd></div>
+                </dl>
+                <p class="back__summary">I led the team through Scrum from requirements and Figma prototypes to App Store release, and built real-time trip tracking, maps and push notifications. It was the highlighted project of the semester in PUCRS's AGES program.</p>
+                <div class="back__actions">
+                  <button class="btn btn--primary btn--sm" type="button" data-case="vango">Read case study</button>
+                  <button class="icon-btn flip-back" type="button" aria-label="Flip VanGO card back"><svg aria-hidden="true"><use href="#i-flip"/></svg></button>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Pom -->
+          <li class="project color-coral" data-project="pom">
+            <div class="project__inner">
+              <button class="face face--front" type="button" aria-expanded="false" aria-label="Pom: Kitty Timer, a Pomodoro timer with cat companions. Flip card for details">
+                <span class="face__media">
+                  <img src="images/pom-cover.webp" alt="" width="1600" height="1200" loading="lazy" decoding="async">
+                </span>
+                <span class="face__meta"><span class="tag">2024–2026 · iOS, watchOS</span><span class="badge">#2 Productivity</span></span>
+                <span class="face__title">Pom: <em>Kitty Timer</em></span>
+                <span class="face__tagline">A Pomodoro timer with cat companions.</span>
+                <span class="flip-hint" aria-hidden="true"><svg><use href="#i-flip"/></svg>Flip</span>
+              </button>
+              <div class="face face--back" inert>
+                <h3 class="back__title">Pom: Kitty Timer</h3>
+                <dl class="back__meta">
+                  <div><dt>Role</dt><dd>Product design and iOS development</dd></div>
+                  <div><dt>Year</dt><dd>2024–2026</dd></div>
+                  <div><dt>Stack</dt><dd>Swift, SwiftUI, watchOS, Figma</dd></div>
+                </dl>
+                <p class="back__summary">Apple Watch support, widgets, live notifications, progress tracking and 8 languages. I refined the UI after a WWDC Design Lab session with Apple experts, and it reached #2 in Productivity on the Brazilian App Store in its first week.</p>
+                <div class="back__actions">
+                  <button class="btn btn--primary btn--sm" type="button" data-case="pom">Read case study</button>
+                  <button class="icon-btn flip-back" type="button" aria-label="Flip Pom card back"><svg aria-hidden="true"><use href="#i-flip"/></svg></button>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Tibby: PLACEHOLDER content throughout -->
+          <li class="project color-peri" data-project="tibby">
+            <div class="project__inner">
+              <button class="face face--front" type="button" aria-expanded="false" aria-label="Tibby: design project. Flip card for details">
+                <span class="face__media">
+                  <img src="images/tibby-cover.webp" alt="Tibby, a pixel-art pet app: the pixel “tibby” logo, a landscape iPhone with the logo, a tilted iPhone showing a pixel shark with a Play button, and an iPhone home screen with the shark, a sushi plate and feed, sleep and play buttons." width="1600" height="1200" loading="lazy" decoding="async">
+                </span>
+                <span class="face__meta"><span class="tag">2024 · Design</span></span>
+                <span class="face__title">Tibby</span>
+                <span class="face__tagline">An everyday companion, like a Tamagotchi for your health.</span>
+                <span class="flip-hint" aria-hidden="true"><svg><use href="#i-flip"/></svg>Flip</span>
+              </button>
+              <div class="face face--back" inert>
+                <h3 class="back__title">Tibby</h3>
+                <dl class="back__meta">
+                  <div><dt>Role</dt><dd>UX/UI design, illustration, animation and research</dd></div>
+                  <div><dt>Year</dt><dd>2024</dd></div>
+                  <div><dt>Stack</dt><dd>Figma</dd></div>
+                </dl>
+                <p class="back__summary">A pixel-art pet that lives on your phone. Sleeping, eating and playing map to real-life fitness activity from Apple Fitness and HealthKit, so your workouts change your Tibby’s happiness and wellbeing.</p>
+                <div class="back__actions">
+                  <button class="btn btn--primary btn--sm" type="button" data-case="tibby">Read case study</button>
+                  <button class="icon-btn flip-back" type="button" aria-label="Flip Tibby card back"><svg aria-hidden="true"><use href="#i-flip"/></svg></button>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- More on GitHub -->
+          <li class="project-more">
+                        <a class="project-more__link" href="https://github.com/marina-yamaguti" target="_blank" rel="noopener">
+              <svg class="sticker project-more__sparkle" aria-hidden="true"><use href="#i-sparkle"/></svg>
+              <span class="tag">Also</span>
+              <span class="project-more__title">More apps and experiments on <em>GitHub</em></span>
+              <span class="project-more__arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about">
+        <div class="about__visual">
+          <div class="about__blob" aria-hidden="true"></div>
+          <img class="about__photo" src="images/marina-about.webp" alt="Marina smiling in her graduation gown, holding her fluffy grey-and-white cat, who wears a feather halo and a lace collar." width="1200" height="1200" loading="lazy" decoding="async">
+          <svg class="sticker sticker--sparkle about__sparkle" aria-hidden="true"><use href="#i-sparkle"/></svg>
+        </div>
+        <div class="about__text">
+          <p class="tag tag--section">02 · About</p>
+          <h2 class="section__title reveal" id="about-title">Between <em>design</em> and engineering</h2>
+          <p class="about__body">I studied Digital Design and Software Engineering at the same time, and I've worked in the space between them ever since. I care about technology that is technically sound and also accessible and useful to the people who rely on it.</p>
+          <p class="about__body">I've built SDKs used by millions at Globo, shipped my own apps to the App Store, researched multilingual interaction patterns at DaVint Lab, and worked in teams in Brazil and France. Now I'm deepening the research side in Paris-Saclay's HCI master's.</p>
+          <ul class="chips" aria-label="Quick facts">
+            <li class="chip color-peri">M.Sc. HCI · Paris-Saclay</li>
+            <li class="chip color-sage">Design + Software Engineering</li>
+            <li class="chip color-coral">Worked in Brazil and France</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section section--band band--sage" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="tag tag--section">03 · Experience</p>
+          <h2 class="section__title reveal" id="experience-title">My <em>experience</em></h2>
+        </div>
+        <div class="card timeline-card">
+          <p class="card-label">My experience</p>
+          <ol class="timeline">
+            <li class="timeline__item" style="--dot: var(--coral)">
+              <p class="timeline__date">Dec 2025 – Aug 2026</p>
+              <h3 class="timeline__role">Mobile Engineer</h3>
+              <p class="timeline__org">Globo · Brazil</p>
+              <p class="timeline__desc">Joined as a Go backend intern and was hired full-time after six months. Worked on GloboID, the sign-in platform behind Globoplay, Premiere and major live events.</p>
+            </li>
+            <li class="timeline__item" style="--dot: var(--peri)">
+              <p class="timeline__date">Feb 2025 – May 2025</p>
+              <h3 class="timeline__role">iOS Engineer</h3>
+              <p class="timeline__org">Hopcast · France (remote)</p>
+              <p class="timeline__desc">Built offline device-to-device sharing with Multipeer Connectivity in SwiftUI for low-connectivity areas.</p>
+            </li>
+            <li class="timeline__item" style="--dot: var(--sage)">
+              <p class="timeline__date">Feb 2023 – Dec 2024</p>
+              <h3 class="timeline__role">iOS Developer</h3>
+              <p class="timeline__org">Apple Developer Academy · Brazil</p>
+              <p class="timeline__desc">Shipped 5+ apps to the App Store, worked as Product Owner in Scrum teams, and ran an iOS workshop for girls.</p>
+            </li>
+            <li class="timeline__item" style="--dot: var(--coral)">
+              <p class="timeline__date">Sep 2024 – Oct 2024</p>
+              <h3 class="timeline__role">Digitalization Portfolio Program</h3>
+              <p class="timeline__org">SAP · Brazil</p>
+              <p class="timeline__desc">Women-in-tech program at SAP Labs Latin America: Java, SQL, unit testing, Git, Agile and UX.</p>
+            </li>
+            <li class="timeline__item" style="--dot: var(--peri)">
+              <p class="timeline__date">Aug 2022 – Dec 2022</p>
+              <h3 class="timeline__role">HCI Research Scholar</h3>
+              <p class="timeline__org">DaVint Lab, PUCRS</p>
+              <p class="timeline__desc">Built a library of 30 interaction patterns for multilingual interfaces and a website to publish it.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="tag tag--section">04 · Education</p>
+          <h2 class="section__title reveal" id="education-title">Where I <em>studied</em></h2>
+        </div>
+        <ul class="edu">
+          <li class="edu__card color-peri" data-edu>
+            <div class="edu__inner">
+              <button class="edu__face edu__face--front" type="button" aria-expanded="false" aria-label="Paris-Saclay. Show courses and activities">
+                <span class="tag">Sep 2026 – Aug 2028 (expected)</span>
+                <span class="edu__degree">M.Sc. Computer Science <em>(HCI)</em></span>
+                <span class="edu__school">Université Paris-Saclay</span>
+                  <span class="chips">
+                    <span class="chip chip--white">IDEX Excellence Scholarship</span>
+                  </span>
+                <span class="flip-hint" aria-hidden="true"><svg><use href="#i-flip"/></svg>Courses</span>
+              </button>
+              <div class="edu__face edu__face--back" inert>
+                <p class="tag">Courses &amp; activities · 1st year</p>
+                <ul class="edu__list">
+                  <li>Human–computer interaction research</li>
+                  <li>Advanced Programming of Interactive Systems</li>
+                  <li>Fundamentals of XR (VR/AR) with Unity and Meta XR</li>
+                  <li>Design of Interactive Systems</li>
+                </ul>
+                <div class="edu__back-actions">
+                  <button class="icon-btn flip-back" type="button" aria-label="Flip Paris-Saclay card back"><svg aria-hidden="true"><use href="#i-flip"/></svg></button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="edu__card color-sage" data-edu>
+            <div class="edu__inner">
+              <button class="edu__face edu__face--front" type="button" aria-expanded="false" aria-label="PUCRS. Show courses and activities">
+                <span class="tag">Feb 2022 – Jul 2026</span>
+                <span class="edu__degree">B.Sc. Software <em>Engineering</em></span>
+                <span class="edu__school">PUCRS</span>
+                  <span class="chips">
+                    <span class="chip chip--white">Ranked 1st in class</span>
+                    <span class="chip chip--white">GPA 9.046/10</span>
+                    <span class="chip chip--white">Best Undergraduate Thesis</span>
+                  </span>
+                <span class="flip-hint" aria-hidden="true"><svg><use href="#i-flip"/></svg>Courses</span>
+              </button>
+              <div class="edu__face edu__face--back" inert>
+                <p class="tag">Courses &amp; activities</p>
+                <ul class="edu__list">
+                  <li>AGES, the programme’s project-based software factory: four semester-long projects, all shipped and deployed with real clients</li>
+                  <li>Undergraduate thesis · Best Thesis Award</li>
+                  <li>HCI research scholar at DaVint Lab</li>
+                  <li>Courses: Software Construction (cloud infrastructure on AWS), Software Design and Architecture, Requirements Engineering</li>
+                </ul>
+                <div class="edu__back-actions">
+                  <button class="icon-btn flip-back" type="button" aria-label="Flip PUCRS card back"><svg aria-hidden="true"><use href="#i-flip"/></svg></button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="edu__card color-coral" data-edu>
+            <div class="edu__inner">
+              <button class="edu__face edu__face--front" type="button" aria-expanded="false" aria-label="Grenoble INP. Show courses and activities">
+                <span class="tag">Jan – Jul 2025</span>
+                <span class="edu__degree">Exchange semester, Information Systems <em>Engineering</em></span>
+                <span class="edu__school">Grenoble INP – Ensimag</span>
+                <span class="flip-hint" aria-hidden="true"><svg><use href="#i-flip"/></svg>Courses</span>
+              </button>
+              <div class="edu__face edu__face--back" inert>
+                <p class="tag">Courses &amp; activities</p>
+                <ul class="edu__list">
+                  <li>French as a Foreign Language, up to the end of B2</li>
+                  <li>Interaction Homme-Machine (Human–Computer Interaction)</li>
+                  <li>Analyse et conception d’objets logiciels (Object-Oriented Software Analysis and Design)</li>
+                  <li>Learned to ski in the Alps</li>
+                </ul>
+                <div class="edu__back-actions">
+                  <button class="icon-btn flip-back" type="button" aria-label="Flip Grenoble INP card back"><svg aria-hidden="true"><use href="#i-flip"/></svg></button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="edu__card color-card" data-edu>
+            <div class="edu__inner">
+              <button class="edu__face edu__face--front" type="button" aria-expanded="false" aria-label="ULBRA. Show courses and activities">
+                <span class="tag">FEB 2022 – JUN 2024</span>
+                <span class="edu__degree">Associate’s degree in Digital <em>Design</em></span>
+                <span class="edu__school">ULBRA</span>
+                <span class="flip-hint" aria-hidden="true"><svg><use href="#i-flip"/></svg>Courses</span>
+              </button>
+              <div class="edu__face edu__face--back" inert>
+                <p class="tag">Courses &amp; activities</p>
+                <ul class="edu__list">
+                  <li>Digital Animation and Motion Design</li>
+                  <li>Information Design in Cyberculture</li>
+                  <li>Strategic Management, Branding and Gamification</li>
+                  <li>Digital Prototyping</li>
+                  <li>Final project: full UX/UI design of an MBTI personality app, from Design Thinking research to high-fidelity Figma prototypes</li>
+                </ul>
+                <div class="edu__back-actions">
+                  <button class="icon-btn flip-back" type="button" aria-label="Flip ULBRA card back"><svg aria-hidden="true"><use href="#i-flip"/></svg></button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ AWARDS ============ -->
+    <section class="section" id="awards" aria-labelledby="awards-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="tag tag--section">05 · Awards</p>
+          <h2 class="section__title reveal" id="awards-title">A few <em>awards</em></h2>
+        </div>
+        <ul class="awards">
+          <li class="award color-coral">
+            <svg class="award__icon" aria-hidden="true"><use href="#i-star"/></svg>
+            <h3 class="award__title">WWDC24 Swift Student Challenge Winner</h3>
+            <p class="award__issuer">Apple</p>
+          </li>
+          <li class="award color-sage">
+            <svg class="award__icon" aria-hidden="true"><use href="#i-flower"/></svg>
+            <h3 class="award__title">SBC/RS Academic Merit Award and Meninas Digitais Award</h3>
+            <p class="award__issuer">Brazilian Computer Society</p>
+          </li>
+          <li class="award color-peri">
+            <svg class="award__icon" aria-hidden="true"><use href="#i-sparkle"/></svg>
+            <h3 class="award__title">Best Undergraduate Thesis Award</h3>
+            <p class="award__issuer">AGES, PUCRS</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section--band band--peri" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="tag tag--section">06 · Skills</p>
+          <h2 class="section__title reveal" id="skills-title">What I <em>work with</em></h2>
+        </div>
+        <div class="card skills">
+          <div class="segmented" role="tablist" aria-label="Skill categories" style="--index: 0">
+            <span class="segmented__thumb" aria-hidden="true"></span>
+            <button class="segmented__btn" role="tab" id="tab-code" aria-controls="panel-code" aria-selected="true" type="button">
+              <span class="lg">Programming</span><span class="sm">Code</span>
+            </button>
+            <button class="segmented__btn" role="tab" id="tab-tools" aria-controls="panel-tools" aria-selected="false" tabindex="-1" type="button">
+              <span class="lg">Frameworks &amp; tools</span><span class="sm">Tools</span>
+            </button>
+            <button class="segmented__btn" role="tab" id="tab-design" aria-controls="panel-design" aria-selected="false" tabindex="-1" type="button">
+              <span class="lg">Design &amp; HCI</span><span class="sm">Design</span>
+            </button>
+            <button class="segmented__btn" role="tab" id="tab-lang" aria-controls="panel-lang" aria-selected="false" tabindex="-1" type="button">
+              <span class="lg">Languages I speak</span><span class="sm">Spoken</span>
+            </button>
+          </div>
+
+          <div class="skills__panel" role="tabpanel" id="panel-code" aria-labelledby="tab-code" tabindex="0">
+            <h3 class="skills__heading">Programming languages</h3>
+            <ul class="chips chips--lg">
+              <li class="chip color-coral">Swift</li><li class="chip color-peri">Kotlin</li><li class="chip color-sage">Go</li>
+              <li class="chip">Python</li><li class="chip">Java</li><li class="chip">JavaScript</li><li class="chip">TypeScript</li><li class="chip">SQL</li>
+            </ul>
+          </div>
+          <div class="skills__panel" role="tabpanel" id="panel-tools" aria-labelledby="tab-tools" tabindex="0" hidden>
+            <h3 class="skills__heading">Frameworks &amp; tools</h3>
+            <ul class="chips chips--lg">
+              <li class="chip color-coral">SwiftUI</li><li class="chip">UIKit</li><li class="chip color-peri">React Native</li>
+              <li class="chip">FastAPI</li><li class="chip color-sage">OAuth 2.0 / OIDC</li><li class="chip">Docker</li><li class="chip">AWS</li><li class="chip">Git</li><li class="chip">CI/CD</li>
+            </ul>
+          </div>
+          <div class="skills__panel" role="tabpanel" id="panel-design" aria-labelledby="tab-design" tabindex="0" hidden>
+            <h3 class="skills__heading">Design &amp; HCI</h3>
+            <ul class="chips chips--lg">
+              <li class="chip color-peri">Figma</li><li class="chip color-sage">UX research</li><li class="chip">Prototyping</li>
+              <li class="chip color-coral">Accessibility</li><li class="chip">Interaction design</li>
+            </ul>
+          </div>
+          <div class="skills__panel" role="tabpanel" id="panel-lang" aria-labelledby="tab-lang" tabindex="0" hidden>
+            <h3 class="skills__heading">Languages I speak</h3>
+            <ul class="langs">
+              <li class="lang color-sage"><span class="lang__name">Portuguese</span><span class="lang__level">Native</span></li>
+              <li class="lang color-peri"><span class="lang__name">English</span><span class="lang__level">C2 · TOEFL 118/120</span></li>
+              <li class="lang color-coral"><span class="lang__name">French</span><span class="lang__level">C1</span></li>
+              <li class="lang color-card-alt"><span class="lang__name">Spanish</span><span class="lang__level">C1</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact color-coral">
+          <svg class="sticker contact__flower" aria-hidden="true"><use href="#i-flower"/></svg>
+          <svg class="sticker contact__sparkle" aria-hidden="true"><use href="#i-sparkle"/></svg>
+          <p class="tag">Contact</p>
+          <h2 class="contact__title reveal" id="contact-title">Let's build something <em>people enjoy</em> using.</h2>
+          <p class="contact__text">I'm looking for a product engineering, software engineering or UX internship in Paris from May to August 2027.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="mailto:m.gelleryamaguti@gmail.com"><svg aria-hidden="true"><use href="#i-mail"/></svg>Email me</a>
+            <a class="btn" href="https://www.linkedin.com/in/marina-yamaguti/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a>
+                        <a class="btn" href="https://github.com/marina-yamaguti" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>GitHub</a>
+          </div>
+          <p class="contact__mail"><a class="wavy wavy--ink" href="mailto:m.gelleryamaguti@gmail.com">m.gelleryamaguti@gmail.com</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2026</span> Marina Geller Yamaguti</p>
+      <p><a class="wavy" href="#top">Back to top ↑</a></p>
+    </div>
+  </footer>
+
+  <!-- ============ CASE STUDY SHEET ============ -->
+  <dialog class="sheet" id="case-sheet" aria-labelledby="sheet-title">
+    <div class="sheet__header">
+      <span class="sheet__grabber" aria-hidden="true"></span>
+      <button class="icon-btn sheet__close" type="button" aria-label="Close case study"><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+    </div>
+    <div class="sheet__body" id="sheet-body"></div>
+  </dialog>
+
+  <!-- Case study content. Each template is cloned into the sheet when opened. -->
+  <template id="case-iris">
+    <article class="case">
+      <header class="case__header">
+        <p class="tag">Case study · 2024</p>
+        <h2 class="case__title" id="sheet-title"><em>Iris</em></h2>
+        <p class="case__lede">A story-driven iPad game about living with low vision.</p>
+        <dl class="case__meta">
+          <div><dt>Role</dt><dd>Solo: research, illustration, design and development</dd></div>
+          <div><dt>Year</dt><dd>2024</dd></div>
+          <div><dt>Stack</dt><dd>Swift, SwiftUI, Figma</dd></div>
+          <div><dt>Recognition</dt><dd>WWDC24 Swift Student Challenge winner</dd></div>
+        </dl>
+      </header>
+      <div class="carousel color-peri" data-carousel data-autoplay="5000" aria-roledescription="carousel" aria-label="Iris screenshots">
+        <ul class="carousel__track" tabindex="0">
+          <li class="carousel__slide" aria-roledescription="slide" aria-label="1 of 6">
+            <img src="images/iris-1-title.webp" alt="Iris title screen on iPad: an illustrated girl with long black hair and a headband, the subtitle “a game about perspective”, and Start and About buttons." width="1600" height="1200" loading="lazy" decoding="async">
+            <p class="carousel__caption">The title screen: “a game about perspective”</p>
+          </li>
+          <li class="carousel__slide" aria-roledescription="slide" aria-label="2 of 6">
+            <img src="images/iris-2-chapter-1.webp" alt="Two iPad screens from Chapter 1, “Blurred visions”: the girl standing on a lavender background, then a city street drawn out of focus with the line “she knew her eyesight would get worse over time, leading to blindness.”" width="1600" height="1200" loading="lazy" decoding="async">
+            <p class="carousel__caption">Chapter 1, “Blurred visions”: the city blurs as her eyesight changes</p>
+          </li>
+          <li class="carousel__slide" aria-roledescription="slide" aria-label="3 of 6">
+            <img src="images/iris-3-minigame.webp" alt="Left: a black-and-white comic page reading “her vision faded until she saw… dark.” Right: a mini-game screen titled IRIS with six circles arranged like a braille cell, one red and one black." width="1600" height="1200" loading="lazy" decoding="async">
+            <p class="carousel__caption">Comic panels tell the story, and mini-games like this braille one let players take part</p>
+          </li>
+          <li class="carousel__slide" aria-roledescription="slide" aria-label="4 of 6">
+            <img src="images/iris-4-chapter-2.webp" alt="Two iPad screens from Chapter 2, “Adapting shadows”: the girl sitting in the grass, then walking down a dark sidewalk with a white cane along yellow tactile paving." width="1600" height="1200" loading="lazy" decoding="async">
+            <p class="carousel__caption">Chapter 2, “Adapting shadows”: a white cane and tactile paving</p>
+          </li>
+          <li class="carousel__slide" aria-roledescription="slide" aria-label="5 of 6">
+            <img src="images/iris-5-chapter-3.webp" alt="Two iPad screens from Chapter 3, “Embracing change”: the girl walking with a guide dog above a prompt to say “NEXT” to continue, and a card defining digital accessibility with Voice Control and screen readers as examples." width="1600" height="1200" loading="lazy" decoding="async">
+            <p class="carousel__caption">Chapter 3, “Embracing change”: a guide dog, Voice Control and digital accessibility</p>
+          </li>
+          <li class="carousel__slide" aria-roledescription="slide" aria-label="6 of 6">
+            <img src="images/iris-6-winner.webp" alt="Swift Student Challenge Winner announcement: the Swift logo in a burst of confetti, between iPad screenshots of Iris." width="1600" height="1200" loading="lazy" decoding="async">
+            <p class="carousel__caption">Winner of Apple’s WWDC24 Swift Student Challenge</p>
+          </li>
+        </ul>
+        <div class="carousel__controls">
+          <button class="icon-btn carousel__nav" type="button" data-dir="-1" aria-label="Previous screenshot"><svg aria-hidden="true"><use href="#i-chevron-left"/></svg></button>
+          <div class="carousel__dots" role="tablist" aria-label="Choose a screenshot"></div>
+          <button class="icon-btn carousel__nav" type="button" data-dir="1" aria-label="Next screenshot"><svg aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+        </div>
+      </div>
+      <div class="case__body">
+        <section><h3>Research</h3><p>Before designing anything, I interviewed university professors working on inclusive technology to understand low vision and the assistive tools people use.</p></section>
+        <section><h3>Story and design</h3><p>I wrote and illustrated the story of a girl whose vision changes. The story is told through mini-games, and each one connects players to a real assistive tool.</p></section>
+        <section><h3>Build</h3><p>I built the game on my own in Swift and SwiftUI for iPad, from the first Figma sketches to the final illustrations.</p></section>
+        <section><h3>Outcome</h3><p>Iris won Apple's WWDC24 Swift Student Challenge, and Apple invited me to WWDC24 at Apple Park.</p>
+          <ul class="case__links">
+            <li><a class="wavy" href="https://www.wwdcscholars.com/s/50A52BD9-2096-4C96-8094-AB2B73E25AEE/2024" target="_blank" rel="noopener">My WWDC Scholars profile</a></li>
+            <li><a class="wavy" href="https://portal.pucrs.br/noticias/ensino/aluna-da-pucrs-e-premiada-em-competicao-internacional-da-apple/" target="_blank" rel="noopener">PUCRS news (in Portuguese)</a></li>
+            <li><a class="wavy" href="https://www.conselhoemrevista.inf.br/aplicativo-sobre-acessibilidade" target="_blank" rel="noopener">Conselho em Revista (in Portuguese)</a></li>
+          </ul>
+        </section>
+      </div>
+    </article>
+  </template>
+
+  <template id="case-globoid">
+    <article class="case">
+      <header class="case__header">
+        <p class="tag">Case study · 2025–2026</p>
+        <h2 class="case__title" id="sheet-title">Globo<em>ID</em></h2>
+        <p class="case__lede">Sign-in for Brazil's largest media group.</p>
+        <dl class="case__meta">
+          <div><dt>Role</dt><dd>Mobile Engineer, Identity Platform</dd></div>
+          <div><dt>Year</dt><dd>2025–2026</dd></div>
+          <div><dt>Stack</dt><dd>Swift, Kotlin, Go, OAuth 2.0 / OIDC</dd></div>
+          <div><dt>Scope</dt><dd>Go backend, iOS and Android</dd></div>
+        </dl>
+      </header>
+      <div class="carousel color-coral" data-carousel data-autoplay="5000" aria-roledescription="carousel" aria-label="GloboID TV sign-in screens">
+        <ul class="carousel__track" tabindex="0">
+          <li class="carousel__slide" aria-roledescription="slide" aria-label="1 of 3">
+            <img src="images/globoid-1-code.webp" alt="iPhone showing the Conta Globo activation page: the heading “Informe o código que aparece na sua TV” (enter the code shown on your TV), six empty code boxes and a white Continuar button." width="1600" height="1200" loading="lazy" decoding="async">
+            <p class="carousel__caption">Enter the code shown on your TV</p>
+          </li>
+          <li class="carousel__slide" aria-roledescription="slide" aria-label="2 of 3">
+            <img src="images/globoid-2-splash.webp" alt="iPhone showing the orange Globo logo, a circle with a rounded screen shape, centred on a black screen." width="1600" height="1200" loading="lazy" decoding="async">
+            <p class="carousel__caption">Hand-off to the Globo app</p>
+          </li>
+          <li class="carousel__slide" aria-roledescription="slide" aria-label="3 of 3">
+            <img src="images/globoid-3-activated.webp" alt="iPhone showing the Conta Globo page with a green check mark and the message “Oba, sua TV foi ativada!” (Your TV is activated!), followed by a note that the TV screen will update automatically." width="1600" height="1200" loading="lazy" decoding="async">
+            <p class="carousel__caption">Your TV is activated and updates on its own</p>
+          </li>
+        </ul>
+        <div class="carousel__controls">
+          <button class="icon-btn carousel__nav" type="button" data-dir="-1" aria-label="Previous screenshot"><svg aria-hidden="true"><use href="#i-chevron-left"/></svg></button>
+          <div class="carousel__dots" role="tablist" aria-label="Choose a screenshot"></div>
+          <button class="icon-btn carousel__nav" type="button" data-dir="1" aria-label="Next screenshot"><svg aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+        </div>
+      </div>
+      <div class="case__body">
+        <section><h3>Context</h3><p>GloboID is the sign-in platform behind Globoplay, Premiere and major live events. Its iOS and Android authentication SDKs are what people go through to reach their accounts.</p></section>
+        <section><h3>What I did</h3>
+          <ul class="case__list">
+            <li>Maintained the iOS and Android authentication SDKs.</li>
+            <li>Built TV sign-in over local Wi‑Fi.</li>
+            <li>Built profile-completion flows that protect minors' data under Brazil's child online-safety law (ECA Digital).</li>
+            <li>Owned features end to end, from the Go backend to both mobile clients.</li>
+          </ul>
+        </section>
+        <section><h3>How I got there</h3><p>I joined Globo as a Go backend intern and was hired full-time as a Mobile Engineer after six months, which is why my work spans the backend and both mobile platforms.</p></section>
+      </div>
+    </article>
+  </template>
+
+  <template id="case-vango">
+    <article class="case">
+      <header class="case__header">
+        <p class="tag">Case study · 2026</p>
+        <h2 class="case__title" id="sheet-title">Van<em>GO</em></h2>
+        <p class="case__lede">Routes, passengers and daily trips for school van drivers.</p>
+        <dl class="case__meta">
+          <div><dt>Role</dt><dd>Project manager and frontend developer</dd></div>
+          <div><dt>Year</dt><dd>2026</dd></div>
+          <div><dt>Stack</dt><dd>React Native, Mapbox, Socket.IO, FastAPI, AWS</dd></div>
+          <div><dt>Team</dt><dd>18 people, AGES program at PUCRS</dd></div>
+        </dl>
+      </header>
+      <div class="carousel color-sage" data-carousel data-autoplay="5000" aria-roledescription="carousel" aria-label="VanGO screenshots">
+        <ul class="carousel__track" tabindex="0">
+          <li class="carousel__slide" aria-roledescription="slide" aria-label="1 of 3">
+            <img src="images/vango-1-realtime.webp" alt="Three VanGO iPhone screens under the Portuguese headline “Sua rota, em tempo real” (your route, in real time). One shows a live map with a “Chegando na parada!” notification and a “01 min” countdown to the next stop with the passenger’s name. Another shows the home screen with the next route to PUCRS, a yellow “Criar rota” button and a list of saved routes. The third is the route-code screen, “Código da Rota”, with five boxes for entering an invite code. Taglines read “Simples. Inteligente. Em movimento.”" width="1600" height="1200" loading="lazy" decoding="async">
+            <p class="carousel__caption">Real-time tracking, a home screen of routes and secure entry with an invite code</p>
+          </li>
+          <li class="carousel__slide" aria-roledescription="slide" aria-label="2 of 3">
+            <img src="images/vango-2-profiles.webp" alt="VanGO screens with Portuguese captions. Left: a route’s list of stops (Partida, Parada 1 to 3, Chegada) with passengers and a navigation button, next to a “Quem vai participar?” screen for choosing who rides, yourself or a dependent. Centre: a yellow “Escolha seu perfil” screen with two illustrated cards, Motorista (driver) and Passageiro (passenger). Right: the yellow VanGO app icon above “Pronto para embarcar?” (ready to board?)." width="1600" height="1200" loading="lazy" decoding="async">
+            <p class="carousel__caption">One route, two experiences: driver and passenger profiles, stops and passengers</p>
+          </li>
+          <li class="carousel__slide" aria-roledescription="slide" aria-label="3 of 3">
+            <img src="images/vango-3-design-system.webp" alt="The VanGO design system board. It lists the typography (Work Sans with −2% letter spacing, shown at several sizes), a colour palette of yellow, iris blue and onyx with lighter tints, the yellow and dark versions of the app icon, and the Material UI component library. A Portuguese note says the design system gives the whole platform a consistent visual language built on Material UI, with scalable, reusable components." width="1600" height="1200" loading="lazy" decoding="async">
+            <p class="carousel__caption">A design system tested for accessibility, built on Material UI</p>
+          </li>
+        </ul>
+        <div class="carousel__controls">
+          <button class="icon-btn carousel__nav" type="button" data-dir="-1" aria-label="Previous screenshot"><svg aria-hidden="true"><use href="#i-chevron-left"/></svg></button>
+          <div class="carousel__dots" role="tablist" aria-label="Choose a screenshot"></div>
+          <button class="icon-btn carousel__nav" type="button" data-dir="1" aria-label="Next screenshot"><svg aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+        </div>
+      </div>
+      <div class="case__body">
+        <section><h3>Leading the team</h3><p>As project manager of an 18-person team, I led the work through Scrum, from requirements and Figma prototypes to the App Store release.</p></section>
+        <section><h3>Building the app</h3><p>As a frontend developer, I built real-time trip tracking, maps and push notifications in React Native, with Mapbox and Socket.IO.</p></section>
+        <section><h3>Outcome</h3><p>VanGO shipped to the App Store and was the highlighted project of the semester in PUCRS's AGES program.</p>
+          <ul class="case__links">
+            <li><a class="wavy" href="https://apps.apple.com/fr/app/vango-transporte-inteligente/id6766738125?platform=ipad" target="_blank" rel="noopener">View VanGO on the App Store</a></li>
+          </ul>
+        </section>
+      </div>
+    </article>
+  </template>
+
+  <template id="case-pom">
+    <article class="case">
+      <header class="case__header">
+        <p class="tag">Case study · 2024–2026</p>
+        <h2 class="case__title" id="sheet-title">Pom: <em>Kitty Timer</em></h2>
+        <p class="case__lede">A Pomodoro timer with cat companions.</p>
+        <dl class="case__meta">
+          <div><dt>Role</dt><dd>Product design and iOS development</dd></div>
+          <div><dt>Year</dt><dd>2024–2026</dd></div>
+          <div><dt>Stack</dt><dd>Swift, SwiftUI, watchOS, Figma</dd></div>
+          <div><dt>Result</dt><dd>#2 in Productivity, Brazilian App Store</dd></div>
+        </dl>
+      </header>
+      <div class="carousel color-coral" data-carousel data-autoplay="5000" aria-roledescription="carousel" aria-label="Pom: Kitty Timer screenshots">
+        <ul class="carousel__track" tabindex="0">
+          <li class="carousel__slide" aria-roledescription="slide" aria-label="1 of 3">
+            <img src="images/pom-1-focus.webp" alt="Pom: Kitty Timer on an iPhone, with the headline “focus with the Pomodoro Method and cute cat companions!”. The screen shows the Pom logo, a large 25:00 timer with a green focus label, and a fluffy black cat with a green collar sitting below." width="1600" height="1200" loading="lazy" decoding="async">
+            <p class="carousel__caption">Focus with the Pomodoro Method and a cat companion</p>
+          </li>
+          <li class="carousel__slide" aria-roledescription="slide" aria-label="2 of 3">
+            <img src="images/pom-2-customize.webp" alt="Under the headline “customize your experience”, three iPhone screens: a scroll ruler for changing the study time, with 25:00 selected between 15 and 35 minutes; a settings sheet with alerts (vibration, sound, notification), study and break timers, and background sounds such as lofi, rain, forest and wind; and two partial screens showing “hold to stop session” and a 10:45 countdown." width="1600" height="1200" loading="lazy" decoding="async">
+            <p class="carousel__caption">Customize the timers, alerts and background sounds</p>
+          </li>
+          <li class="carousel__slide" aria-roledescription="slide" aria-label="3 of 3">
+            <img src="images/pom-3-watch-widgets.webp" alt="Under the headline “connect with your Watch &amp; Widgets”: an Apple Watch face showing 25:00 with a black cat, and two square home-screen widgets reading “Today focus 2, 50 min” with a black cat and “Today focus 1, 30 min” with a white cat." width="1600" height="1200" loading="lazy" decoding="async">
+            <p class="carousel__caption">Start a session from your wrist and track your day with widgets</p>
+          </li>
+        </ul>
+        <div class="carousel__controls">
+          <button class="icon-btn carousel__nav" type="button" data-dir="-1" aria-label="Previous screenshot"><svg aria-hidden="true"><use href="#i-chevron-left"/></svg></button>
+          <div class="carousel__dots" role="tablist" aria-label="Choose a screenshot"></div>
+          <button class="icon-btn carousel__nav" type="button" data-dir="1" aria-label="Next screenshot"><svg aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+        </div>
+      </div>
+      <div class="case__body">
+        <section><h3>What it does</h3>
+          <ul class="case__list">
+            <li>Apple Watch support and widgets</li>
+            <li>Live notifications and progress tracking</li>
+            <li>Available in 8 languages</li>
+          </ul>
+        </section>
+        <section><h3>Design</h3><p>I refined the UI after a WWDC Design Lab session with Apple experts.</p></section>
+        <section><h3>Outcome</h3><p>Pom reached #2 in Productivity on the Brazilian App Store in its first week.</p>
+          <ul class="case__links">
+            <li><a class="wavy" href="https://apps.apple.com/ga/app/pom-kitty-timer/id6503416934" target="_blank" rel="noopener">View Pom on the App Store</a></li>
+          </ul>
+        </section>
+      </div>
+    </article>
+  </template>
+
+    <template id="case-tibby">
+    <article class="case">
+      <header class="case__header">
+        <p class="tag">Case study · 2024</p>
+        <h2 class="case__title" id="sheet-title"><em>Tibby</em></h2>
+        <p class="case__lede">An everyday companion, like a Tamagotchi for your health.</p>
+        <dl class="case__meta">
+          <div><dt>Role</dt><dd>UX/UI design, illustration, animation and research</dd></div>
+          <div><dt>Year</dt><dd>2024</dd></div>
+          <div><dt>Tools</dt><dd>Figma</dd></div>
+          <div><dt>Type</dt><dd>Design project</dd></div>
+        </dl>
+      </header>
+      <div class="carousel color-peri" data-carousel data-autoplay="5000" aria-roledescription="carousel" aria-label="Tibby screenshots">
+        <ul class="carousel__track" tabindex="0">
+          <li class="carousel__slide" aria-roledescription="slide" aria-label="1 of 5">
+            <img src="images/tibby-1-companion.webp" alt="Tibby title art: the pixel “tibby” logo with a golden dome icon, the line “Your everyday companion!”, a gacha machine full of small creatures, and a pink pixel axolotl-like pet with a red pixel heart, on a light blue background." width="1600" height="1200" loading="lazy" decoding="async">
+            <p class="carousel__caption">Your everyday companion, in pixel art</p>
+          </li>
+          <li class="carousel__slide" aria-roledescription="slide" aria-label="2 of 5">
+            <img src="images/tibby-2-screens.webp" alt="Three iPhone screens on a pink background. Home shows a shark with a Play button and the text “Choose which Tibby you want to play with”. Gacha, “All Series”, shows a gacha machine and a Roll button for 100 coins. Tibby Book lists Sea Series and House Series creatures, with locked ones shown as silhouettes." width="1600" height="1200" loading="lazy" decoding="async">
+            <p class="carousel__caption">Choose a Tibby, roll the gacha for more and collect them all in the Tibby Book</p>
+          </li>
+          <li class="carousel__slide" aria-roledescription="slide" aria-label="3 of 5">
+            <img src="images/tibby-3-care-workout-missions.webp" alt="Three iPhone screens. Tibby Care shows the shark in its room with feed, sleep and play buttons and a teddy bear sticker. Workout tracker shows a badminton session with a 00:32:58 timer, 823 steps and the shark on screen. Missions lists daily and weekly missions with rewards." width="1600" height="1200" loading="lazy" decoding="async">
+            <p class="carousel__caption">Care for your Tibby, track real workouts with it and complete missions for rewards</p>
+          </li>
+          <li class="carousel__slide" aria-roledescription="slide" aria-label="4 of 5">
+            <img src="images/tibby-4-design-tasks.webp" alt="A Jira board titled “Design Tasks” with cards for the design work on Tibby, including Gacha animation, Garden and Bedroom UI design, Food illustrations, Petting and Sleeping animation, Widget design and Rewards icons." width="1600" height="1200" loading="lazy" decoding="async">
+            <p class="carousel__caption">Design tasks tracked in Jira: UI, illustration and animation</p>
+          </li>
+          <li class="carousel__slide" aria-roledescription="slide" aria-label="5 of 5">
+            <img src="images/tibby-5-visual-language.webp" alt="Early moodboard for Tibby, used as inspiration in the first design stages: three pixel-art gachapon machines, a pixel goose with a holly hat, a pixel alphabet, pixel food and pastry icons, a pixel shark, the “Tibby” wordmark and a five-colour palette from blue to red." width="1600" height="1200" loading="lazy" decoding="async">
+            <p class="carousel__caption">Early moodboard: pixel-art references that inspired the visual language</p>
+          </li>
+        </ul>
+        <div class="carousel__controls">
+          <button class="icon-btn carousel__nav" type="button" data-dir="-1" aria-label="Previous screenshot"><svg aria-hidden="true"><use href="#i-chevron-left"/></svg></button>
+          <div class="carousel__dots" role="tablist" aria-label="Choose a screenshot"></div>
+          <button class="icon-btn carousel__nav" type="button" data-dir="1" aria-label="Next screenshot"><svg aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+        </div>
+      </div>
+      <div class="case__body">
+        <section><h3>The idea</h3><p>Tibby is like a Tamagotchi for your health. Sleeping, eating and playing map to real-life fitness activities tracked through Apple Fitness and HealthKit, and what you do in real life shows up in your Tibby’s happiness and wellbeing.</p></section>
+        <section><h3>What I did</h3><p>I worked mainly on UX/UI design in Figma, illustration, animation and research, from the pixel-art characters and food to the sleeping, eating and gacha animations.</p></section>
+        <section><h3>Features</h3>
+          <ul class="case__list">
+            <li>HealthKit and Apple Fitness integration</li>
+            <li>Apple Watch companion and Live Activity</li>
+            <li>Home-screen widgets</li>
+            <li>Animations for every activity</li>
+          </ul>
+        </section>
+        <section><h3>Widgets</h3><p>Home-screen widgets keep your Tibby’s hunger, happiness and tiredness in view.</p>
+          <div class="case__widgets">
+            <figure><img src="images/tibby-widget-rabbit.png" alt="Small square widget with a pixel rabbit and a golden food bowl on a soft green background." width="158" height="158" loading="lazy" decoding="async"></figure>
+            <figure><img src="images/tibby-widget-cat.png" alt="Wide widget for a black-and-white pixel cat showing hungry, happy and tired bars and a My Tibby button." width="338" height="158" loading="lazy" decoding="async"></figure>
+            <figure><img src="images/tibby-widget-sageon.png" alt="Dark large widget for a golden pixel dog named Sageon with hungry, happy and tired bars and a My Tibby button." width="338" height="354" loading="lazy" decoding="async"></figure>
+          </div>
+        </section>
+      </div>
+    </article>
+  </template>
+</body>
+</html>

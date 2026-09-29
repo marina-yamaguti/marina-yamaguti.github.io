@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Photo placeholder">
+<!-- PLACEHOLDER: replace with a real photo of Marina (e.g. images/marina.jpg, square, 1200x1200) -->
+<rect width="600" height="600" fill="#CCD5FF"/>
+<circle cx="470" cy="120" r="70" fill="#FC8B69"/>
+<circle cx="300" cy="245" r="105" fill="#302D28" opacity=".85"/>
+<path d="M110 600c0-120 85-200 190-200s190 80 190 200z" fill="#302D28" opacity=".85"/>
+<text x="300" y="560" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="26" fill="#F2F2EA">PHOTO PLACEHOLDER</text>
+</svg>

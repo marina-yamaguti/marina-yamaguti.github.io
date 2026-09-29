@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+<!-- PLACEHOLDER: replace with a VanGO screenshot (e.g. images/vango.jpg, 1600x1200) -->
+<rect width="800" height="600" fill="#C3D6A8"/>
+<g stroke="#FFFFFF" stroke-width="14" opacity=".55" fill="none"><path d="M0 170H800M0 380H800M210 0V600M560 0V600"/></g>
+<rect x="290" y="40" width="220" height="440" rx="40" fill="#302D28"/>
+<rect x="304" y="54" width="192" height="412" rx="30" fill="#F2F2EA"/>
+<path d="M340 420C360 330 460 360 440 270S350 190 400 110" fill="none" stroke="#FC8B69" stroke-width="8" stroke-dasharray="4 14" stroke-linecap="round"/>
+<circle cx="340" cy="420" r="12" fill="#302D28"/>
+<path d="M400 70c-20 0-34 15-34 33 0 25 34 55 34 55s34-30 34-55c0-18-14-33-34-33z" fill="#FC8B69"/><circle cx="400" cy="103" r="11" fill="#F2F2EA"/>
+<g font-family="IBM Plex Mono, monospace" font-size="18" fill="#302D28"><rect x="24" y="24" rx="17" width="366" height="40" fill="#FFFFFF" opacity=".85"/><text x="42" y="50">SCREENSHOT PLACEHOLDER · VanGO</text></g>
+</svg>

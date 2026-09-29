@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+<!-- PLACEHOLDER: replace with a Pom: Kitty Timer screenshot (e.g. images/pom.jpg, 1600x1200) -->
+<rect width="800" height="600" fill="#FC8B69"/>
+<rect x="250" y="80" width="300" height="360" rx="80" fill="#302D28"/>
+<rect x="272" y="102" width="256" height="316" rx="62" fill="#F2F2EA"/>
+<circle cx="400" cy="270" r="96" fill="none" stroke="#C3D6A8" stroke-width="18"/>
+<path d="M400 174a96 96 0 0 1 90 125" fill="none" stroke="#302D28" stroke-width="18" stroke-linecap="round"/>
+<path d="M352 250l-8-38 30 22M448 250l8-38-30 22" fill="#302D28"/>
+<ellipse cx="400" cy="275" rx="52" ry="40" fill="#302D28"/>
+<circle cx="382" cy="270" r="6" fill="#F2F2EA"/><circle cx="418" cy="270" r="6" fill="#F2F2EA"/>
+<text x="400" y="400" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="30" fill="#302D28">25:00</text>
+<g font-family="IBM Plex Mono, monospace" font-size="18" fill="#302D28"><rect x="24" y="24" rx="17" width="344" height="40" fill="#FFFFFF" opacity=".85"/><text x="42" y="50">SCREENSHOT PLACEHOLDER · Pom</text></g>
+</svg>
